@@ -21,6 +21,7 @@
   main{
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   main > section {
@@ -130,6 +131,39 @@ color: rgb(114, 114, 114);
   #quick-list{
     font-weight: 500;
   }
+
+
+  /* facts related styles */
+  .fact-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(255, 144, 14);
+     width: 100%;
+     max-width: 240px;
+     height: auto;
+    min-height: 180px;
+     border-radius: 8px;
+     align-items: center;
+     justify-content: center;
+  }
+ .fact-number{
+ font-size: 2.8rem ;
+ font-weight: 600;
+ margin-top: 10px;
+ 
+ }
+ .fact-name{
+  font-size: 1.25rem;
+ }
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.fact-description{
+  max-width: 540px;
+}
+ 
 
   /* responsive media */
  @media screen and (max-width:576px) 
